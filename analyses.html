@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no"/>
+    <title>Nos analyses - Medical LAB</title>
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS personnalisé -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/style-menu.css"/>
+    <style>
+        .banniere-page {
+            max-height: 200px;
+            overflow: hidden;
+        }
+
+        .banniere-page .ban-img {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .banniere-page .side-text {
+            top: 70px;
+        }
+
+        .banniere-page .side-text > div > div {
+            text-align: center;
+            width: 100%;
+        }
+
+        .banniere-page h1 {
+            font-size: 32px;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+<!-- Barre supérieure -->
+<div class="first-bar">
+    <img id="logo" src="img/logo.png" alt="Medical LAB">
+
+    <nav>
+        <label for="burger-checkbox" class="burger">&#9776;</label>
+        <input type="checkbox" id="burger-checkbox"/>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="analyses.html">Espace patient</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Qui sommes-nous ?</a></li>
+        </ul>
+    </nav>
+</div>
+
+<!-- Bannière simplifiée -->
+<div class="banniere banniere-page">
+    <img class="ban-img" src="img/banniere-page.jpg" alt="Bannière">
+
+    <div class="side-text">
+        <div>
+            <div>
+                <h1>Nos Analyses</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Section services -->
+<section class="services">
+    <div class="box-section" id="part1">
+        <h3>Analyses hématologiques</h3>
+        <p>Numération formule sanguine, hémostase, groupage sanguin. Nos équipements de pointe garantissent des résultats fiables et rapides.</p>
+    </div>
+
+    <div class="box-section" id="part2">
+        <h3>Analyses biochimiques</h3>
+        <p>Bilan lipidique, glycémie, fonction rénale et hépatique. Surveillance de votre état de santé général avec précision.</p>
+    </div>
+
+    <div class="box-section" id="part3">
+        <h3>Analyses microbiologiques</h3>
+        <p>Recherche de bactéries, virus et parasites. ECBU, prélèvements bactériologiques, sérologies infectieuses.</p>
+    </div>
+
+    <div class="box-section" id="part4">
+        <h3>Analyses immunologiques</h3>
+        <p>Tests allergologiques, marqueurs tumoraux, maladies auto-immunes. Diagnostic précis pour un suivi optimal.</p>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <div class="footer-col">
+            <h3>À propos de MedicalLAB</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua enim ad minim veniam, quis nostrud ut consequat.</p>
+        </div>
+
+        <div class="footer-col">
+            <h3>Contactez-nous</h3>
+            <p><img src="img/mail.png" alt="Email"> contact@medicallab.fr</p>
+            <p><img src="img/tel.png" alt="Tel"> +33 1 45 67 89 10<br>+33 1 45 67 89 11</p>
+            <p><img src="img/adress.png" alt="Adresse"> 123 Avenue des petits-chats<br>75000 Paris</p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

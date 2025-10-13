@@ -1,0 +1,70 @@
+nav {
+    background-color: #fff;
+    overflow: hidden;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+nav li, nav .burger {
+    float: left;
+    display: block;
+    color: #444;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    list-style: none;
+}
+
+nav li a {
+    color: #666;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    color: #ff4757;
+}
+
+/* Faire disparaître le burger button par défaut */
+nav .burger {
+    display: none;
+}
+
+/* Faire disparaître le checkbox */
+#burger-checkbox {
+    display: none;
+}
+
+/* Responsive - moins de 600px */
+@media screen and (max-width: 600px) {
+    nav {
+        position: static;
+    }
+
+    /* Le burger button réapparait */
+    nav .burger {
+        display: block;
+    }
+
+    /* Chaque objet de type block prend une ligne entière */
+    nav li, nav .burger {
+        float: none;
+    }
+
+    /* Par défaut le ul n'apparait pas */
+    nav ul {
+        display: none;
+    }
+
+    /* Le ul apparait quand le checkbox est coché */
+    nav #burger-checkbox:checked + ul {
+        display: block;
+    }
+}
